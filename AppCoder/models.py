@@ -1,10 +1,11 @@
 from django.db import models
 
 # Create your models here.
-class Curso(models.Model):
+class Familiares(models.Model):
 
     nombre = models.CharField(max_length=40)
-    camada = models.IntegerField()
+    edad = models.IntegerField()
+    fecha_de_nacimiento = models.DateField()
 
 class Estudiantes(models.Model):
 

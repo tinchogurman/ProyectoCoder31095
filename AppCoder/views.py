@@ -1,13 +1,13 @@
 from django.shortcuts import render
 
-from AppCoder.models import Curso
+from AppCoder.models import Familiares
 
-def curso(request):
+def familia(request):
 
-    curso1 = Curso(nombre="Python", camada=31095)
-    curso1.save()
+    familia1 = Familiares(nombre="Federico", edad=36, fecha_de_nacimiento='1987-04-07')
+    familia1.save()
     contexto = {
-        'curso': curso1
+        'familia': familia1
     }
 
     return render(request, 'curso.html', contexto)
