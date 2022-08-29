@@ -12,4 +12,4 @@ def curso(request):
 
     }
 
-    return render(request, 'curso.html', contexto)
+    return render(request, 'AppCoder/curso.html', contexto)
