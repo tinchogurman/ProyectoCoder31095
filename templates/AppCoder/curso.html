@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Curso</title>
-</head>
-<body>
-Estos son mis datos de estudiante:
-<br>
-{{ curso.nombre }}
-<br>
-Edad {{ curso.camada }}
-</body>
-</html
+{% extends 'index.html' %}
+
+{% block title %}
+Curso
+{% endblock %}
+
+{% block inicio %}
+    Un curso fue creado satisfactoriamente:
+    <br>
+    {{ curso.nombre }}
+    <br>
+    Camada {{ curso.camada }}
+{% endblock %}
