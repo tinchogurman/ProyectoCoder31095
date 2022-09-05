@@ -3,5 +3,5 @@ from AppCoder.views import curso, inicio
 
 urlpatterns = [
     path('', inicio),
-    path('curso/', curso)
+    path('curso/', curso, name='AppCoderCurso')
 ]
