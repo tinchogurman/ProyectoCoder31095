@@ -1,0 +1,6 @@
+1. Ingresar al link: http://127.0.0.1:8000/AppCoder/
+2. En este link se pueden probar las funcionalidades de Inicio / Entregable / Curso, donde se pueden ver los datos ingresados a través de las vistas
+3. Luego ingresar al link http://127.0.0.1:8000/AppCoder/curso_formulario/ --> aqui se pueden ingresar los valores al formulario,
+para la prueba se han ingresado los valores 1, 2, 3 y 31095
+4. Luego ingresar al link http://127.0.0.1:8000/AppCoder/curso_formulario/ --> para buscar las camadas ingresadas anteriormente: en caso
+de querer buscar la camada 31095 se devolverá el mensaje "El nombre del curso es Python con la camada 31095"
