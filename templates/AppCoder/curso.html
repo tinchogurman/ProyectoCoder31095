@@ -5,10 +5,14 @@ Curso
 {% endblock %}
 
 {% block inicio %}
-    Un curso fue creado satisfactoriamente:
-    <br>
-    {{ curso.nombre }}
-    <br>
-    Camada {{ curso.camada }}
+
+     {% for curso in cursos %}
+
+  El nombre del curso es {{ curso.nombre }} con la camada {{ curso.camada }}
+  <a href="{% url 'AppCoderEliminarCurso' curso.camada %}">-X-</a>
+  <a href="{% url 'AppCoderEditarCurso' curso.camada %}"> Editar </a>
+  <br>
+ {% endfor %}
+
 {% endblock %}
 
